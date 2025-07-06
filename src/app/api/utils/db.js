@@ -8,6 +8,6 @@ export const db = new Pool({
   port: env.DB_PORT,
   database: env.DB_NAME,
   ssl: {
-    rejectUnauthorized: false,
+    rejectUnauthorized: true,
   },
 });
